@@ -15,6 +15,10 @@
 		B122E11B23F46B2E0046B5C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B122E11923F46B2E0046B5C0 /* Main.storyboard */; };
 		B122E11D23F46B300046B5C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B122E11C23F46B300046B5C0 /* Assets.xcassets */; };
 		B122E12023F46B300046B5C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B122E11E23F46B300046B5C0 /* LaunchScreen.storyboard */; };
+		B122E12B23F479FC0046B5C0 /* basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122E12A23F479FC0046B5C0 /* basket.swift */; };
+		B122E12D23F47B0D0046B5C0 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122E12C23F47B0D0046B5C0 /* GameObject.swift */; };
+		B122E12F23F47B400046B5C0 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122E12E23F47B400046B5C0 /* GameProtocol.swift */; };
+		B122E13123F47F1D0046B5C0 /* eggs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122E13023F47F1D0046B5C0 /* eggs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		B122E11C23F46B300046B5C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B122E11F23F46B300046B5C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B122E12123F46B300046B5C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B122E12A23F479FC0046B5C0 /* basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basket.swift; sourceTree = "<group>"; };
+		B122E12C23F47B0D0046B5C0 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		B122E12E23F47B400046B5C0 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		B122E13023F47F1D0046B5C0 /* eggs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eggs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 		B122E10E23F46B2E0046B5C0 /* Egg Catcher */ = {
 			isa = PBXGroup;
 			children = (
+				B122E12723F46ED60046B5C0 /* Objects */,
 				B122E10F23F46B2E0046B5C0 /* AppDelegate.swift */,
 				B122E11123F46B2E0046B5C0 /* GameScene.sks */,
 				B122E11323F46B2E0046B5C0 /* Actions.sks */,
@@ -71,6 +80,17 @@
 				B122E12123F46B300046B5C0 /* Info.plist */,
 			);
 			path = "Egg Catcher";
+			sourceTree = "<group>";
+		};
+		B122E12723F46ED60046B5C0 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B122E12A23F479FC0046B5C0 /* basket.swift */,
+				B122E12C23F47B0D0046B5C0 /* GameObject.swift */,
+				B122E12E23F47B400046B5C0 /* GameProtocol.swift */,
+				B122E13023F47F1D0046B5C0 /* eggs.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +169,10 @@
 				B122E11623F46B2E0046B5C0 /* GameScene.swift in Sources */,
 				B122E11823F46B2E0046B5C0 /* GameViewController.swift in Sources */,
 				B122E11023F46B2E0046B5C0 /* AppDelegate.swift in Sources */,
+				B122E12B23F479FC0046B5C0 /* basket.swift in Sources */,
+				B122E13123F47F1D0046B5C0 /* eggs.swift in Sources */,
+				B122E12D23F47B0D0046B5C0 /* GameObject.swift in Sources */,
+				B122E12F23F47B400046B5C0 /* GameProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
