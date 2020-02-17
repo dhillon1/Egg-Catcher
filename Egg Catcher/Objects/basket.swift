@@ -52,7 +52,6 @@ class basket:GameObject{
     
     override func Reset()
     {
-        
     }
     
     override func Start()
