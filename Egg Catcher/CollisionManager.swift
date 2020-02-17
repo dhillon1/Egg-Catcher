@@ -29,7 +29,6 @@ class CollisionManager
         
         let distance = sqrt((diffx*diffx)+(diffy*diffy))
         
-        
         if(distance <= 70){
             if(!object1.isColliding!){
             scene.run(SKAction.playSoundFileNamed("music", waitForCompletion: false))
