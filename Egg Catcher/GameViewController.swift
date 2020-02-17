@@ -107,7 +107,6 @@ class GameViewController: UIViewController {
                     view.presentScene(scene)
                 }
                 
-                
             }
             score.isHidden = true
             live.isHidden = true
