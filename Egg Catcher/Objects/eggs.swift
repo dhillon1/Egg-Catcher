@@ -1,14 +1,18 @@
 //
 //  eggs.swift
 //  Egg Catcher
-//
-//  Created by Simran on 2020-02-12.
+//  Project name = Egg Catcher
+//  Developed by = Harmandeep Kaur (301092579) and Simranjeet Singh Dhillon (301093914)
+//  Description = Score class
+//  Date modified = 16-02-2020
 //  Copyright © 2020 centennialcollege. All rights reserved.
 //
 
 import SpriteKit
 import GameplayKit
 
+
+//class
 class eggs: GameObject
 {
     
@@ -28,7 +32,7 @@ class eggs: GameObject
     override func CheckBounds()
     {
         
-        if(self.position.y < -400)
+        if(self.position.y < -640)
         {
             self.Reset()
         }
@@ -43,6 +47,7 @@ class eggs: GameObject
     override func Reset()
     {
         self.position.y = 380
+        self.isColliding = false
 
     }
     

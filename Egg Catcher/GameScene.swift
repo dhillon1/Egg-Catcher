@@ -1,8 +1,10 @@
 //
 //  GameScene.swift
 //  Egg Catcher
-//  
-//  Created by Simran and Harman on 2020-02-12.
+//  Project name = Egg Catcher
+//  Developed by = Harmandeep Kaur (301092579) and Simranjeet Singh Dhillon (301093914)
+//  Description = Score class
+//  Date modified = 16-02-2020
 //  Copyright © 2020 centennialcollege. All rights reserved.
 //
 
@@ -25,7 +27,7 @@ class GameScene: SKScene {
     var eggSprite3: eggs?
   
     
-    //var config: Config?
+   
     
     
     override func didMove(to view: SKView)
@@ -36,25 +38,28 @@ class GameScene: SKScene {
         self.name = "GAME"
         
    
-        // add plane
+        // add basket
         self.basketSprite = basket()
         self.basketSprite?.position = CGPoint(x: 0, y: -575)
         self.basketSprite?.size = CGSize(width: 190, height: 190)
         self.addChild(basketSprite!)
         
+        // add egg left
         self.eggSprite1 = eggs()
         self.eggSprite1?.position = CGPoint(x: -236, y: 380)
-        self.eggSprite1?.size = CGSize(width: 40, height: 40)
+        self.eggSprite1?.size = CGSize(width: 70, height: 70)
         self.addChild(eggSprite1!)
         
+        // add egg middle
         self.eggSprite2 = eggs()
         self.eggSprite2?.position = CGPoint(x: 0, y: 380)
-        self.eggSprite2?.size = CGSize(width: 40, height: 40)
+        self.eggSprite2?.size = CGSize(width: 70, height: 70)
         self.addChild(eggSprite2!)
         
+        // add egg right
         self.eggSprite3 = eggs()
         self.eggSprite3?.position = CGPoint(x: 233, y: 380)
-        self.eggSprite3?.size = CGSize(width: 40, height: 40)
+        self.eggSprite3?.size = CGSize(width: 70, height: 70)
         self.addChild(eggSprite3!)
         
         
@@ -78,25 +83,10 @@ class GameScene: SKScene {
         self.basketSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: pos.y))
     }
 
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
-//    {
-//        for t in touches { self.touchDown(atPoint: t.location(in: self))}
-//    }
-//
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         for t in touches { self.touchMoved(toPoint: t.location(in: self))}
     }
-    
-//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?)
-//    {
-//        for t in touches { self.touchUp(atPoint: t.location(in: self))}
-//    }
-
-//    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?)
-//    {
-//        for t in touches { self.touchUp(atPoint: t.location(in: self))}
-//    }
     
     
     
@@ -106,6 +96,14 @@ class GameScene: SKScene {
         self.eggSprite1?.Update()
         self.eggSprite2?.Update()
         self.eggSprite3?.Update()
+        
+        self.basketSprite?.Update()
+        
+        CollisionManager.squaredRadiusCheck(scene: self, object1: eggSprite1!, object2: basketSprite!)
+        CollisionManager.squaredRadiusCheck(scene: self, object1: eggSprite2!, object2: basketSprite!)
+        CollisionManager.squaredRadiusCheck(scene: self, object1: eggSprite3!, object2: basketSprite!)
+        
+        
         
     }
 }

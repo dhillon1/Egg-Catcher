@@ -19,6 +19,11 @@
 		B122E12D23F47B0D0046B5C0 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122E12C23F47B0D0046B5C0 /* GameObject.swift */; };
 		B122E12F23F47B400046B5C0 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122E12E23F47B400046B5C0 /* GameProtocol.swift */; };
 		B122E13123F47F1D0046B5C0 /* eggs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122E13023F47F1D0046B5C0 /* eggs.swift */; };
+		B122E13323F96C770046B5C0 /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122E13223F96C770046B5C0 /* CollisionManager.swift */; };
+		B122E13723F9D77E0046B5C0 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122E13623F9D77E0046B5C0 /* Score.swift */; };
+		B1AB176923FA11870097BE34 /* start.sks in Resources */ = {isa = PBXBuildFile; fileRef = B1AB176823FA11870097BE34 /* start.sks */; };
+		B1AB176D23FA149E0097BE34 /* end.sks in Resources */ = {isa = PBXBuildFile; fileRef = B1AB176C23FA149E0097BE34 /* end.sks */; };
+		B1AB177323FA3A2A0097BE34 /* music.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1AB177223FA3A2A0097BE34 /* music.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		B122E12C23F47B0D0046B5C0 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		B122E12E23F47B400046B5C0 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		B122E13023F47F1D0046B5C0 /* eggs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eggs.swift; sourceTree = "<group>"; };
+		B122E13223F96C770046B5C0 /* CollisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
+		B122E13623F9D77E0046B5C0 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		B1AB176823FA11870097BE34 /* start.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = start.sks; sourceTree = "<group>"; };
+		B1AB176C23FA149E0097BE34 /* end.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = end.sks; sourceTree = "<group>"; };
+		B1AB177223FA3A2A0097BE34 /* music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = music.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,7 @@
 				B122E12723F46ED60046B5C0 /* Objects */,
 				B122E10F23F46B2E0046B5C0 /* AppDelegate.swift */,
 				B122E11123F46B2E0046B5C0 /* GameScene.sks */,
+				B1AB177223FA3A2A0097BE34 /* music.wav */,
 				B122E11323F46B2E0046B5C0 /* Actions.sks */,
 				B122E11523F46B2E0046B5C0 /* GameScene.swift */,
 				B122E11723F46B2E0046B5C0 /* GameViewController.swift */,
@@ -78,6 +89,10 @@
 				B122E11C23F46B300046B5C0 /* Assets.xcassets */,
 				B122E11E23F46B300046B5C0 /* LaunchScreen.storyboard */,
 				B122E12123F46B300046B5C0 /* Info.plist */,
+				B122E13223F96C770046B5C0 /* CollisionManager.swift */,
+				B122E13623F9D77E0046B5C0 /* Score.swift */,
+				B1AB176823FA11870097BE34 /* start.sks */,
+				B1AB176C23FA149E0097BE34 /* end.sks */,
 			);
 			path = "Egg Catcher";
 			sourceTree = "<group>";
@@ -154,7 +169,10 @@
 				B122E11B23F46B2E0046B5C0 /* Main.storyboard in Resources */,
 				B122E11223F46B2E0046B5C0 /* GameScene.sks in Resources */,
 				B122E11D23F46B300046B5C0 /* Assets.xcassets in Resources */,
+				B1AB177323FA3A2A0097BE34 /* music.wav in Resources */,
+				B1AB176D23FA149E0097BE34 /* end.sks in Resources */,
 				B122E12023F46B300046B5C0 /* LaunchScreen.storyboard in Resources */,
+				B1AB176923FA11870097BE34 /* start.sks in Resources */,
 				B122E11423F46B2E0046B5C0 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,8 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B122E13323F96C770046B5C0 /* CollisionManager.swift in Sources */,
 				B122E11623F46B2E0046B5C0 /* GameScene.swift in Sources */,
 				B122E11823F46B2E0046B5C0 /* GameViewController.swift in Sources */,
+				B122E13723F9D77E0046B5C0 /* Score.swift in Sources */,
 				B122E11023F46B2E0046B5C0 /* AppDelegate.swift in Sources */,
 				B122E12B23F479FC0046B5C0 /* basket.swift in Sources */,
 				B122E13123F47F1D0046B5C0 /* eggs.swift in Sources */,

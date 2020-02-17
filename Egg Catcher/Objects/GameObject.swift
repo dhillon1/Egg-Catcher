@@ -1,8 +1,10 @@
 //
 //  GameObject.swift
 //  Egg Catcher
-//
-//  Created by Simran on 2020-02-12.
+//  Project name = Egg Catcher
+//  Developed by = Harmandeep Kaur (301092579) and Simranjeet Singh Dhillon (301093914)
+//  Description = GameObject class
+//  Date modified = 16-02-2020
 //  Copyright © 2020 centennialcollege. All rights reserved.
 //
 
