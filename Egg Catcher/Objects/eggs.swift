@@ -16,7 +16,6 @@ import GameplayKit
 class eggs: GameObject
 {
     
-    
     init()
     {
         super.init(imageString: "egg", initialScale: 2.0)
